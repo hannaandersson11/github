@@ -1,0 +1,28 @@
+body > * {
+	width: 1000px;
+}
+body {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-areas:
+		"logo nav1 nav1 nav1 nav1"
+		"main main main main side"
+		"foot foot foot foot foot";
+	gap: 1rem;
+}
+header h1 {
+	grid-area: logo;
+}
+nav {
+	grid-area: nav1;
+}
+main {
+	grid-area: main;
+}
+aside {
+	grid-area: side;
+}
+footer {
+	grid-area: foot;
+	display: flex;
+}
